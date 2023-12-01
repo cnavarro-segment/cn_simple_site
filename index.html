@@ -1,316 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Tag Manager -->
-
-<script>
-  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){if(window.analytics.initialized)return window.analytics[e].apply(window.analytics,arguments);var i=Array.prototype.slice.call(arguments);i.unshift(e);analytics.push(i);return analytics}};for(var i=0;i<analytics.methods.length;i++){var key=analytics.methods[i];analytics[key]=analytics.factory(key)}analytics.load=function(key,i){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=i};analytics._writeKey="Y3FeaWK4CrYHdVUhmZ1DU33V9LBO89jS";;analytics.SNIPPET_VERSION="4.16.1";
-  analytics.load("Y3FeaWK4CrYHdVUhmZ1DU33V9LBO89jS");
-  analytics.page();
-  }}();
-</script>
-  
-  <style>
-
-form  { display: table;      }
-p     { display: table-row;  }
-label { display: table-cell; width: 150px; padding: 5px 10px 5px 10px; text-align: right; }
-input, select { display: table-cell; width: 150px; 
--moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-                                          }
-h3 { text-align: center; } 
-h1 { text-align: center; } 
-    
-
-.forms {
-  border: 3px solid black;
-  background-color: lightblue;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 25px;
-  padding-left: 20px;
-  width: 400px;
-}
-    
-
-body {
-font-family: Arial;
-font-size: 100%;
-width: 962px;
-padding: 30px;}
-    
-
-main{
-width: 360px;
-float: left;
-}
-
-rside{
-width: 360px;
-float: right;
-
-{
-
-
-
-
-    
-  </style>
-  
-  
-  
-  
-  <title>CN's Simple Site
-  </title>
-  
-</head>
-  <body>
-
-    
-  <h1>CN's Simple Site</h1>
-    
-
-
-<main>
-<div class="forms">
-<h3>Registration</h3>  
-   <form id="registration-form">
-           <p>
-       <label for="reg_fname">First Name</label>
-       <input type="text" id="reg_fname" name="reg_firstname" placeholder="First">
-           </p>
-           <p>
-       <label for="reg_flname">Last Name</label>   
-       <input type="text" id="reg_lname" name="reg_lastname" placeholder="Last">
-           </p>
-            <p>   
-       <label for="reg_email">Email</label>   
-       <input type="text" id="reg_email" name="reg_email" placeholder="Email">
-           </p>
-
-            <p>   
-       <label for="reg_email">Phone</label>   
-       <input type="text" id="reg_phone" name="reg_phone" placeholder="Phone">
-           </p>
-
-            <p>   
-       <label for="reg_email">User Id</label>   
-       <input type="text" id="reg_user_id" name="reg_user_id" placeholder="user_id">
-           </p>
-
-           <br>
-           <p>
-       <label for=""></label>   
-       <input type="submit" class="btn" value="Submit">
-           </p>
-     </form>
-</div>
-           <br>  
-           <br>
-<div class="forms">
-   <h3>Product Info Request</h3>
-       <form id="product-form">
-       <p>
-<label for="product">Select Product</label>
-  <select id="product" name=product">
-    <option value=""></option>
-    <option value="product_a"">Product A</option>
-    <option value="product_b"">Product B</option>
-    <option value="product_c"">Product C</option>
-  </select>
-            </p>
-           <p>
-       <label for="type">Role</label>
-       <input type="text" id="role" name="role" placeholder="Role">
-           </p>
-           <p>
-       <label for="user">Email</label>
-       <input type="text" id="email" name="email" placeholder="Email">
-           </p>
-           <br>
-           <p>
-       <label for=""></label>   
-         <input type="submit" class="btn" value="Request Info">
-           </p>
-      </form>
-</div>
-           <br>
-           <br>
-<div class="forms">
-       <h3>Trial Request</h3>
-       <form id="trial-form">
-   <p>
-<label for="product">Select Product</label>
-  <select id="trial_product" name=trial_product">
-    <option value=""></option>
-    <option value="product_a"">Product A</option>
-    <option value="product_b"">Product B</option>
-    <option value="product_c"">Product C</option>
-  </select>
-            </p>
-            <p>
-          <label for="trial_start_date">Trial Start Date</label>
-          <input type="text" id="trial_start_date" name="trial_start_date" placeholder="Trial Start Date">
-            </p>
-            <p>
-          <label for="trial_contact">Contact Name</label>
-          <input type="text" id="trial_contact" name="trial_contact" placeholder="Contact Name">
-            </p>
-              <p>
-          <label for="trial_email">Contact Email</label>
-          <input type="text" id="trial_email" name="trial_email" placeholder="Contact Email">
-            </p>
-            <br>
-            <p>
-       <label for=""></label>   
-          <input type="submit" class="btn" value="Submit Trial Request">
-            </p>
-        </form>
-</div>
-    <script>   
-      
-      
-      
-      
-// Get Current Date      
-var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0');
-var yyyy = String(today.getFullYear());
-today = mm + '/' + dd + '/' + yyyy ;
-
-
-      
-      
-      
-      
-      
-     
-   //Define UI varibales
-
-    const form_reg = document.querySelector('#registration-form');
-    const reg_fname = document.querySelector('#reg_fname');
-    const reg_lname = document.querySelector('#reg_lname');
-    const reg_email = document.querySelector('#reg_email');  
-    const reg_phone = document.querySelector('#reg_phone');  
-    const reg_user_id = document.querySelector('#reg_user_id');  
-
-    const form_product = document.querySelector('#product-form');
-    const product_product = document.querySelector('#product');
-    const product_role = document.querySelector('#role');
-    const product_email = document.querySelector('#email');
-   
-    const form_trial = document.querySelector('#trial-form');     
-    const trial_product = document.querySelector('#trial_product');     
-    const trial_start_date = document.querySelector('#trial_start_date');            
-    const trial_contact = document.querySelector('#trial_contact');  
-    const trial_email = document.querySelector('#trial_email'); 
-            
-
-      //Add listeners
-      form_reg.addEventListener('submit',addRegistration);
-      form_product.addEventListener('submit',addProduct);
-      form_trial.addEventListener('submit',addTrial);
-      
-      
-     function addRegistration() {  
-       // add identify call
-   analytics.identify(reg_user_id.value, {
-     fname: reg_fname.value,
-     lname: reg_lname.value,
-     phone: reg_phone.value,
-     email: reg_email.value,
-     name: reg_fname.value + ' ' + reg_lname.value
-});
+ <script>
+    ! function() {
+      var analytics = window.analytics = window.analytics || [];
+      if (!analytics.initialize)
+        if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
+        else {
+          analytics.invoked = !0;
+          analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"];
+          analytics.factory = function(e) {
+            return function() {
+              var t = Array.prototype.slice.call(arguments);
+              t.unshift(e);
+              analytics.push(t);
+              return analytics
+            }
+          };
+          for (var e = 0; e < analytics.methods.length; e++) {
+            var key = analytics.methods[e];
+            analytics[key] = analytics.factory(key)
+          }
+          analytics.load = function(key, e) {
+            var t = document.createElement("script");
+            t.type = "text/javascript";
+            t.async = !0;
+            t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(t, n);
+            analytics._loadOptions = e
+          };
+          analytics.SNIPPET_VERSION = "4.13.1";
+          analytics.load("d0MDt3a2am8uY6illx2NbNyfZ45Sb49M");
+          analytics.page('Nike Store/home');
         }
+    }();
+  </script>
+
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Store</title>
+    <style>
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .form-container input[type="text"], .form-container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Nike Store</title>
+
+</head>
+<body>
+    <header class="header" id="top">
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card header">
+              <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+              <a href="#top" class="w3-bar-item w3-button w3-padding-large " >Nike Store</a>
+              <span class="w3-right">
+
+             
+              <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Home</a>
+              <a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Categories</a>
+              <a href="#new-arrivals" class="w3-bar-item w3-button w3-padding-large w3-hide-small">New Arrivals</a>
+              <a href="#testimony" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Newsletter</a>
+              <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact You</a>
+            </span>
+            </div>
+          </div>
+  
+          <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+          <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <a href="#home" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
+            <a href="#gallery" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Categories</a>
+            <a href="#new-arrivals" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">New Arrivals</a> 
+            <a href="#testimony" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Newsletter</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact You</a>
+          </div>
+    </header>
+<main>
+    <div  class="hero-section w3-animate-left " id="home">
+        <div class="hero-section-main">
+           <div class="hero-section-into-text w3-margin-top">
+               <h1 class="w3-text-white">Movement Essentials</h1>
+              <p class="w3-right w3-text-white w3-small w3-hide-small hero-qoute ">
+              </p>
+               <div class="w3-text-white l " style="margin-top:60px">
+                 <p >Follow us on Social media</p>
+                 <div class="w3-margin-top">
+
+  
+              <a href="#">  <i class="fa fa-facebook-official w3-hover-opacity icons" ></i></a> 
+              <a href="#"><i class="fa fa-instagram w3-hover-opacity icons" ></i></a> 
+              <a href="#"><i class="fa fa-snapchat w3-hover-opacity icons"></i></a>  
+              <a href="#"><i class="fa fa-pinterest-p w3-hover-opacity icons" ></i></a>  
+              <a href="#"><i class="fa fa-twitter w3-hover-opacity icons"></i></a>  
+              <a href="#"><i class="fa fa-linkedin w3-hover-opacity icons"></i></a>  
+              </div>
+               </div>
+               <a href="#new-arrivals" class="" >
+                <button class="w3-text-white w3-small w3-round w3-red w3-btn w3-margin-top" onclick="send('track_newarrivals')"> New Sneakers</button>
+               </a>
+               
+           </div>
+        </div>    
+        </div>
+    
+    </div>
+  </main>
+  <section>
+    <div class="products" id="gallery">
+
+  
+      <div class="w3-container ">
+        <h2 class="section-text-header">Find out what options <br> you have</h2>
+      </div>
+      <div class="w3-row product-list"  >
+        <div class="w3-col m9 l6 product-left-side w3-animate-left">
+          <p style="position: absolute;padding: 18px;">Women's styles</p>
+         <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5aabf068-9d27-4aeb-b044-3d7282abeef5/go-womens-firm-support-high-waisted-cropped-leggings-with-pockets-lkgZK1.png" alt="pedram-normohamadian"/>
+        </div>
+        <div class="w3-col m9 l5 product-right-side" >
+          <div class="product-right-side-1">
+            <p style="position: absolute;padding: 20px;">Men's Styles</p>
+             <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7b12fa9a-9bdf-4208-8530-44833a757bff/sportswear-tech-fleece-mens-crew-xN0gwb.png" alt="ussama-azam"/>
+          </div>
+          <div class="product-right-side-2">
+            <p style="position: absolute; padding: 20px;">kid's style</p>
+              <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2f1d56c3-4796-43b5-a80d-2e542082d78c/colorblock-puffer-jacket-toddler-jacket-4FQth1.png" alt="kindred-hues"/>
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="w3-container ">
+          <h2 class="section-text-header">Get our newly arrived sneakers</h2>
+        </div>
+        
+        
+      </div>
+      </div>
+
       
- 
-      
-     function addProduct() {  
-       // add product info requested 
-analytics.track("Product Info Requested", {
-        product: product_product.value,
-        role: product_role.value,
-  "context": {
-    "traits" : {
-      "email": product_email.value
-    }
-  } 
-}
-       );
-     }
-   
+  </section>
+  
+    <div class="new-arrived-products" id="new-arrivals">
+      <div class="new-product ">
+         <div class="new-arrived-image">
+            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9eaef86b-679f-4f22-8393-c56675a28a7f/air-force-1-07-mens-shoes-rXkGJX.png" alt="milada-vigerova"/>
+         </div>
+         <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+
+         
+         <h4 style="text-overflow:ellipsis ;overflow: hidden;;">Nike Air Force 1'07</h4>
+         <p  class="w3-small">Men's Shoes</p>
+         <p class="w3-small" >gray | white | black</p>
+         <p class="price" >$110</p>
+         <button class="w3-button w3-red w3-round " style="margin-left: 75px;" onclick="addedtocart('Air Force')">Add to Cart</button>
+       </div>
+      </div>
+      <div class="new-product">
+       <div class="new-arrived-image">
+         <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bab314ed-4a92-4b35-98de-279d66949a94/air-jordan-1-mid-se-craft-mens-shoes-p0kWbP.png" alt="cristofer-maximilian"/>
+       </div>
+       <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+
        
+         <h4 style="text-overflow:ellipsis ;overflow: hidden;">Air Jordan 1 Mid SE Craft</h4>
+         <p  class="w3-small">Men's Shoes</p>
+         <p class="w3-small" >gray | yellow | black</p>
+         <p class="price" >$135</p>
+         <button class="w3-button w3-red w3-round " style="margin-left: 75px;" onclick="addedtocart('Air Jordan')">Add to Cart</button>
+     </div>
+     </div>
+     <div class="new-product">
+       <div class="new-arrived-image">
+         <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9af9bf83-f7ab-429b-adc6-16fd7dae0db8/blazer-mid-77-womens-shoes-NPWfjm.png" alt="gez-xavier-mansfield"/>
+     </div>
+     <div class="w3-margin-top" style="overflow: hidden;  padding:0px 20px;">
+       <h4>Nike Blazer Mid '77</h4>
+       <p class="w3-small">Women's Shoes</p>
+       <p class="w3-small">gray | blue-black</p>
+       <p class="price" >$105</p>
+       <button class="w3-button w3-red w3-round " style="margin-left: 75px;" onclick="addedtocart('Blazer Mid')">Add to Cart</button>
+   </div>
+     </div>
+     <div class="new-product">
+       <div class="new-arrived-image">
+         <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a8d2bcba-a31c-4b25-928e-b167017acc3b/blazer-mid-77-big-kids-shoes-5Sm3B6.png" alt="wander-fleur"/>
+       </div>
+       <div class="w3-margin-top" style="overflow: hidden;  padding:0px 20px;">
+         <h4>Nike Blazer Mid '77</h4>
+         <p class="w3-small">Big Kids' Shoes</p>
+         <p class="w3-small">white | black</p>
+         <p class="price" >$76.97 18% off</p>
+         <button class="w3-button w3-red w3-round " style="margin-left: 75px;" onclick="addedtocart('Blazer Mid')">Add to Cart</button>
+     </div>
+    </div>
+    <div class="new-product">
+     <div class="new-arrived-image">
+       <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ff2e824-a8e5-482a-aedf-8a7604c0a401/pegasus-40-eliud-kipchoge-road-running-shoes-mVJdmS.png" alt="signature-june"/>
+     </div>
+     <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
+       <h4>Nike Pegasus 40</h4>
+       <p  class="w3-small">Road Running Shoes </p>
+       <p class="w3-small" >Red | black</p>
+       <p class="price" >$130</p>
+       <button class="w3-button w3-red w3-round " style="margin-left: 75px;" onclick="addedtocart('Pegasus')">Add to Cart</button>
+   </div>
+   </div>
+   <div class="new-product">
+     <div class="new-arrived-image">
+       <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8956f555-31e8-43aa-813f-4cb66b9d6b71/pegasus-flyease-se-womens-easy-on-off-road-running-shoes-7f02dx.png" alt="kemal-alkan"/>
+   </div>
+   <div class="w3-margin-top"  style="overflow: hidden;  padding:0px 20px;">
+     <h4 >Nike Pegasus FlyEase SE</h4>
+     <p class="w3-small" >Women's Easy On/Off Road Running Shoes</p>
+     <p class="w3-small" >Red | yellow | black</p>
+     <p  class="price" >$130</p>
+     <button class="w3-button w3-red w3-round " style="margin-left: 75px;" onclick="addedtocart('Pegasus')">Add to Cart</button>
+ </div>
+   </div>
+   <div class="new-product">
+     <div class="new-arrived-image">
+       <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/485358b3-c1c5-41d2-8598-f8baa78a23f5/metcon-9-mens-workout-shoes-00kjPz.png" alt="kemal-alkan"/>
+   </div>
+   <div class="w3-margin-top"  style="overflow: hidden;  padding:0px 20px;">
+     <h4 >Nike Metcon 9</h4>
+     <p class="w3-small" >Men's Workout Shoes</p>
+     <p class="w3-small" >Red | yellow | black</p>
+     <p  class="price" >$150</p>
+     <button class="w3-button w3-red w3-round " style="margin-left: 75px;"onclick="addedtocart('Metcon')">Add to Cart</button>
+ </div>
 
-   function addTrial() {  
-       // add trial call
-      analytics.track("Trial Request", {
-     trial_product: trial_product.value,
-     trial_start_date: trial_start_date.value,
-          trial_request_date: today,
-         "context": {
-    "traits" : {
-       trial_contact: trial_contact.value,
-     email: trial_email.value
-    }
-  } 
-}     
-       );
-        }  
-      
-      </script>
-      
-</main>
-<rside>
-<h3> Registration</h3>
-<p>
-analytics.identify(reg_user_id.value, { <br>
-     fname: reg_fname.value,  <br>
-     lname: reg_lname.value,  <br>
-     phone: reg_phone.value,  <br>
-     email: reg_email.value,   <br>
-  name: reg_fname.value + ' ' + reg_lname.value <br>
-});   <br>
-</p>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h3>Product Info Request </h3>
-analytics.track("Product Info Requested", { <br>
-        product: product_product.value,<br>
-        role: product_role.value,<br>
-  "context": {<br>
-    "traits" : {<br>
-      "email": product_email.value<br>
-    }<br>
-  }<br>
-});<br>
-<br>
-<br>
-<h3>TrialRequest </h3>
- analytics.track("Trial Request", {<br>
-trial_product: trial_product.value,<br>
-trial_start_date: trial_start_date.value,<br>
-          trial_request_date: today,<br>
-         "context": {<br>
-    "traits" : {<br>
-       trial_contact: trial_contact.value,<br>
-      email: trial_email.value<br>
-     }<br>
-  }<br>
- });<br>
-
-</rside>
+   </div>
+<!-- Customer Feedback-->
+<div class="w3-light-gray" style="margin-top: 40px; padding: 50px 0px;" id="testimony">
 
 
-    </body>
+<div class="feedback">
+  <div class="w3-container ">
+    <h2 class="section-text-header" style="margin-top: 0px !important;">Subscribe to Our Athletes Newsletter</h2>
+  </div> 
+  <div class="Customer-feedback" style="display: flex;justify-content: space-evenly;flex-wrap: wrap;">
+   <div class="card">
+    <div class="customer-feedback-header">
+       <div class="customer-profile">
+         <img src="https://cdn2.excelsior.com.mx/media/styles/grande/public/pictures/2023/03/21/2922010.jpg" alt="Photo by Behrouz Sasani | Unsplash"/>
+       </div>
+       <div>
+         <p class="name">Lebron James</p>
+         
+       </div>
+    </div>
+   <div>
+     <p class="w3-small">"With my new sneakers you will be able to jump like a pro, dunk like a pro, score like a pro!"</p>
+   </div>
+  </div>
+  <div class="card">
+    <div class="customer-feedback-header">
+       <div class="customer-profile">
+         <img src="https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk2NzQ0NjUxMDk1NDE4NDk4/cristiano-ronaldo-festeja.jpg" alt="Photo by Roman Holoschchuk | Unsplash"/>
+       </div>
+       <div>
+         <p class="name">Cristiano Ronaldo</p>
+         
+       </div>
+    </div>
+   <div>
+     <p class="w3-small">"To keep up my level is essential to be surrounded by people that supports you, and that’s exactly Nike"</p>
+   </div>
+  </div>
+  <div class="card">
+    <div class="customer-feedback-header">
+       <div class="customer-profile">
+         <img src="https://imagenes.heraldo.es/files/image_990_v3/uploads/imagenes/2022/08/09/tennis-national-bank-open.jpeg" alt="Photo by Robert Godwin | Unsplash"/>
+       </div>
+       <div>
+         <p class="name">Selena Williams</p>
+         
+       </div>
+    </div>
+   <div>
+     <p class="w3-small">"Nike family stills being part of my life, part of my family. There is no better equipment than Nike!"</p>
+   </div>
+  </div>
+  <div class="card">
+    <div class="customer-feedback-header">
+       <div class="customer-profile">
+         <img src="https://media.self.com/photos/57d8a22a4b76f0f832a0e3b9/4:3/w_2560%2Cc_limit/Maria-USOpen2015-3.jpg" alt="Photo by Florencia Simonini | Unsplash"/>
+       </div>
+       <div>
+         <p class="name">Maria Sharapova</p>
+         
+       </div>
+    </div>
+   <div>
+     <p class="w3-small" >"The best brand, the best team, Nike! Just Do It!"</p>
+   </div>
+  </div>
+  </div> 
+</div>
+
+    <h1></h1>
+    <p></p>
+    <div class="form-container">
+        <form name="form" onsubmit="send('identify')">
+            <label for="name">Name:</label>
+            <input name="fullname" size="75" type="text" id="name" required>
+
+            <label for="age">Age:</label>
+            <input name="age" size="75" type="text" id="age" required>
+
+            <label for="gender">Gender:</label>
+            <input name="gender" size="75" type="text" id="gender" required>
+
+            <label for="email">Email:</label>
+            <input name="email" size="75" type="email" id="email" required>
+
+            <br><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+
+</div>
+<br>
+  <div class="w3-center contact" id="contact" >
+    <div class=" w3-left-align w3-margin-top contact-info ">
+       <h3 style="font-weight: 800;" class="contact-head">GET IN TOUCH</h3> 
+       <h4 style="font-weight: 600;">Your styles at low cost 
+       </h4>
+       <p>We care about our customers<br>you can contact us for any feedback</p>
+       <h4 style="font-weight: 600;">Follow Us </h4>
+       
+     <i class="fa fa-facebook-official w3-hover-opacity icons"  ></i>
+     <i class="fa fa-instagram w3-hover-opacity icons" ></i>
+     <i class="fa fa-snapchat w3-hover-opacity icons"></i>
+     <i class="fa fa-pinterest-p w3-hover-opacity icons" ></i>
+     <i class="fa fa-twitter w3-hover-opacity icons"></i>
+     <i class="fa fa-linkedin w3-hover-opacity icons"></i>
+    </div>
+    <div class="w3-left-align w3-margin-top contact-info" >
+          <h3 style="font-weight: 600;">OPENING HOURS</h3>
+             <p>Mon - Sat 7am - 9pm:</p>
+             <p>Opening on Morning | Off at afternoon</p>
+             <p>Delivery only on opening hours</p>
+             <br>
+             <div class="w3-margin-to  w3-left-align" >
+              <h4 style="font-weight: 600;">CONTACT INFO</h4>
+              <p> <i class="fa fa-phone " style="margin-right: 8px;font-size: 20px;"></i> 763-957-6781</p>
+              <p><i class="fa fa-phone" style="margin-right: 8px;font-size: 20px;"></i>706-734-2591</p>
+              <label><i class="fa fa-envelope " style=" margin-right: 5px;font-size: 20px;"></i></label>
+             <input placeholder="Email" class="w3-margin-top" type="email"/>
+             <br>
+             <br>
+             <button class="w3-button w3-red w3-round " style="margin-left: 30px;" onclick="send('track_subscribed')">Contact Me</button>
+    
+           </div>     
+                 
+    </div>
+    
+    
+  </div>
+
+
+  
+    <script>
+
+      function addedtocart(category){
+      switch (category){
+      case "Air Force":
+        analytics.track("Added to Cart", {
+              category: "Air Force"
+            });
+      break;      
+
+      case "Air Jordan":
+        analytics.track("Added to Cart", {
+              category: "Air Jordan"
+            });
+      break;  
+
+      case "Blazer Mid":
+        analytics.track("Added to Cart", {
+              category: "Blazer Mid"
+            });
+      break;  
+
+      case "Pegasus":
+        analytics.track("Added to Cart", {
+              category: "Pegasus"
+            });
+      break;  
+
+      case "Metcon":
+        analytics.track("Added to Cart", {
+              category: "Metcon"
+            });
+      break;  
+
+      default:
+            alert("Method not supported")
+      }
+      }
+
+
+        function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        
+      function send(method) {
+        switch (method) {
+          case "page":
+            analytics.page("Sample Page Event");
+          break;
+          
+          case "track_newarrivals":
+            analytics.track("New Arrivals", {
+              sampleTrait: true
+            });
+          break;
+
+          case "track_subscribed":
+            analytics.track("Contact Me", {
+              sampleTrait: true
+            });
+          break;
+
+          case "identify":
+              var name = document.getElementById("name").value;
+              var email = document.getElementById("email").value;
+              var age = document.getElementById("age").value;
+              var gender = document.getElementById("gender").value;
+              var random = Math.floor(Math.random() * (9999999999 - 1000000000 + 1)) + 1000000000;
+
+            analytics.identify(random, {
+            name: name,
+            email: email,
+            age: age,
+            gender: gender,
+            sampleTrait: true
+            });
+
+            analytics.track("Subscribed Newsletter",{
+              sampleTrait: true
+            })
+          break;
+
+          case "group":
+            analytics.group("sampleGroupId", {
+              sampleGroupTrait: true
+            });
+            break;
+          default:
+            alert("Method not supported")
+          
+        }
+      }
+
+
+    </script>
+</body>
 </html>
