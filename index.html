@@ -862,7 +862,7 @@
     image_url: 'images.footlocker.com/is/image/EBFL2/FW8081?wid=300&hei=300&fmt=png-alpha',
     is_new_product: false,
     is_sale_product: true,
-    name: 'Baby Jogger City Select',
+    name: 'Baby Jogger City Mini',
     platform: 'Web',
     price: '69.99',
     product_category: 'Strollers',
@@ -941,8 +941,12 @@
           break;
           
           case "track_newarrivals":
-            analytics.track("New Arrivals", {
-              sampleTrait: true
+            analytics.track("Strollers", {
+             name: 'Strollers',
+             properties: {
+             platform: 'Web',
+             title: 'Strollers'
+             sampleTrait: true
             });
           break;
 
