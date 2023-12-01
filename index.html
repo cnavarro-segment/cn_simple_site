@@ -697,26 +697,12 @@
          <img src="https://www.megababiesusa.com/cdn/shop/products/BOBGearWayfinder-ATF-Nightfall_Right-2023_1000x.jpg?v=1680109301" alt="wander-fleur"/>
        </div>
        <div class="w3-margin-top" style="overflow: hidden;  padding:0px 20px;">
-         <h4>CoolShare Baby Stroller for Toddler</h4>
+         <h4>CoolShare Stroller Toddler</h4>
          <p class="w3-small">Stroller</p>
          <p class="w3-small">white | black</p>
          <p class="price" >$76.97 18% off</p>
          <button class="w3-button w3-red w3-round " style="margin-left: 75px;" onclick="addedtocart('CoolShare Baby Stroller for Toddler')">Add to Cart</button>
-     </div>
-    </div>
-    <div class="new-product">
-     <div class="new-arrived-image">
-       <img src="https://www.megababiesusa.com/cdn/shop/products/liingrr_800x.jpg?v=1677606660" alt="signature-june"/>
-     </div>
-     <div class="w3-margin-top" style="overflow: hidden; padding:0px 20px;">
-       <h4>Graco Extend2Fit Convertible Car Seat</h4>
-       <p  class="w3-small">Car Seat</p>
-       <p class="w3-small" >Red | black</p>
-       <p class="price" >$130</p>
-       <button class="w3-button w3-red w3-round " style="margin-left: 75px;" onclick="addedtocart('Graco Extend2Fit Convertible Car Seat')">Add to Cart</button>
-  
  </div>
-
    </div>
 <!-- Customer Feedback-->
 <div class="w3-light-gray" style="margin-top: 40px; padding: 50px 0px;" id="testimony">
@@ -901,13 +887,13 @@
             });
       break;  
 
-      case "CoolShare Baby Stroller for Toddle":
+      case "CoolShare Baby Stroller for Toddler":
         analytics.track("Product Added", {
                   category: 'Strollers',
     image_url: 'images.footlocker.com/is/image/EBFL2/FW8081?wid=300&hei=300&fmt=png-alpha',
     is_new_product: false,
     is_sale_product: true,
-    name: 'CoolShare Baby Stroller for Toddle',
+    name: 'CoolShare Stroller Toddler',
     order_id: 'd9f56712',
     platform: 'Web',
     price: '97.99',
@@ -973,7 +959,7 @@
               var gender = document.getElementById("gender").value;
               var random = Math.floor(Math.random() * (9999999999 - 1000000000 + 1)) + 1000000000;
 
-            analytics.identify(random, {
+            analytics.identify('3a312c89', {
             name: name,
             email: email,
             age: age,
@@ -981,7 +967,7 @@
             sampleTrait: true
             });
 
-            analytics.track("Subscribed Newsletter",{
+            analytics.track("Registered",{
               sampleTrait: true
             })
           break;
